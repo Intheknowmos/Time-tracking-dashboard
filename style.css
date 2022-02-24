@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@300;400;500&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --self-care: hsl(43, 84%, 65%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.profile {
+    grid-row: 1/3;
+    background-color: var(--Dark-blue);
+    border-radius: 10px;
+}
+
+.profile-top {
+    color: var(--Pale-Blue);
+    background-color: var(--Blue);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.profile-top h6 {
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.profile-top h2 {
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.profile ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.profile ul li {
+    margin: 5px 0;
+    color: var(--Desaturated-blue);
+}
+
+.profile ul li.active {
+    color: var(--Pale-Blue);
+}
+
+.profile-top .img {
+    width: 90px;
+    height: 90px;
+    /* border: 2px solid white;
+    border-radius: 100%;
+    background-image: url(images/image-jeremy.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.profile-top div img {
+    border-radius: 100%;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+.card-bottom {
+    background-color: var(--Dark-blue);
+    border-radius: 13px;
+    padding: 20px;
+    color: var(--Desaturated-blue);
+}
+
+.card-bottom .title-div {
+    background-image: url("images/icon-ellipsis.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.card-bottom p {
+    font-weight: 300;
+    font-size: 0.6rem;
+}
+
+.card-bottom div p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--Pale-Blue);
+}
+
+.card-bottom h3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--Pale-Blue);
+    margin: 20px 0 8px 0;
+}
+
+.card {
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50px;
+    border-radius: 13px;
+}
+
+.calenda {
+    cursor: pointer;
+}
+
+.calenda:hover {
+    color: var(--Pale-Blue);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+
+    .work, .play, .exercise, .study, .social, .selfcare {
+        margin-top: 20px;
+       
+    }
+
+    .profile ul {
+        display: flex;
+    }
+
+    .profile ul li {
+        margin: 0px 20px 0px 30px;
+    }
+    .profile-top {
+        display: flex;
+        gap: 15px;
+    }
+
+    .current-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-bottom h3 {
+        margin: 0px 0px 8px 0px;
+    }
+
+    /* .user {
+        width: 100%;
+    } */
+}
+
+.work {
+    background-image: url("images/icon-work.svg");
+    background-color: var(--work);
+}
+
+.play {
+    background-image: url("images/icon-play.svg");
+    background-color: var(--play);
+}
+
+.study {
+    background-image: url("images/icon-study.svg");
+    background-color: var(--study);
+}
+
+.exercise {
+    background-image: url("images/icon-exercise.svg");
+    background-color: var(--exercise);
+}
+
+.social {
+    background-image: url("images/icon-social.svg");
+    background-color: var(--social);
+}
+
+.selfcare {
+    background-image: url("images/icon-self-care.svg");
+    background-color: var(--self-care);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
